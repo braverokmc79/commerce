@@ -2,7 +2,7 @@
 
 # Next.js Commerce
 
-The all-in-one starter kit for high-performance e-commerce sites. With a few clicks, Next.js developers can clone, deploy and fully customize their own store.
+고성능 전자 상거래 사이트를 위한 올인원 스타터 키트. 몇 번의 클릭만으로 Next.js 개발자는 자신의 스토어를 복제, 배포 및 완전히 사용자 정의할 수 있습니다.
 Start right now at [nextjs.org/commerce](https://nextjs.org/commerce)
 
 Demo live at: [demo.vercel.store](https://demo.vercel.store/)
@@ -43,14 +43,14 @@ pnpm dev # run this command in the site folder
 
 ## Integrations
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor, Vendure, Spree and Commerce.js. We plan to support all major ecommerce backends.
+Next.js Commerce는 BigCommerce, Shopify, Swell, Saleor, Vendure, Spree 및 Commerce.js와 기본적으로 통합됩니다. 우리는 모든 주요 전자 상거래 백엔드를 지원할 계획입니다
 
 ## Considerations
 
-- `packages/commerce` contains all types, helpers and functions to be used as a base to build a new **provider**.
-- **Providers** live under `packages`'s root folder and they will extend Next.js Commerce types and functionality (`packages/commerce`).
-- We have a **Features API** to ensure feature parity between the UI and the Provider. The UI should update accordingly and no extra code should be bundled. All extra configuration for features will live under `features` in `commerce.config.json` and if needed it can also be accessed programmatically.
-- Each **provider** should add its corresponding `next.config.js` and `commerce.config.json` adding specific data related to the provider. For example in the case of BigCommerce, the images CDN and additional API routes.
+- `packages/commerce`에는 새로운 **제공자**를 구축하기 위한 기반으로 사용할 모든 유형, 도우미 및 기능이 포함되어 있습니다.
+- **제공자**는 `packages`의 루트 폴더 아래에 있으며 Next.js Commerce 유형 및 기능(`packages/commerce`)을 확장합니다.
+- UI와 공급자 간의 기능 패리티를 보장하는 **기능 API**가 있습니다. 그에 따라 UI가 업데이트되고 추가 코드가 번들되지 않아야 합니다. 기능에 대한 모든 추가 구성은 `commerce.config.json`의 `features` 아래에 있으며 필요한 경우 프로그래밍 방식으로 액세스할 수도 있습니다.
+- 각 **공급자**는 공급자와 관련된 특정 데이터를 추가하는 해당 `next.config.js` 및 `commerce.config.json`을 추가해야 합니다. 예를 들어 BigCommerce의 경우 이미지 CDN 및 추가 API 경로가 있습니다.
 
 ## Configuration
 
@@ -68,7 +68,7 @@ NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=xxxxxxx.myshopify.com
 
 ### Features
 
-Every provider defines the features that it supports under `packages/{provider}/src/commerce.config.json`
+모든 공급자는 아래에서 지원하는 기능을 정의합니다. `packages/{provider}/src/commerce.config.json`
 
 #### Features Available
 

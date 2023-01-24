@@ -125,11 +125,11 @@ const Layout: React.FC<Props> = ({
           <SidebarUI links={navBarlinks} />
         </CheckoutProvider>
         <FeatureBar
-          title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
+          title="이 사이트는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다. 클릭하면 개인 정보 보호 정책에 동의하는 것입니다."
           hide={acceptedCookies}
           action={
             <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
+            쿠키 수락
             </Button>
           }
         />
